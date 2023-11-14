@@ -42,57 +42,47 @@ class MyCard extends StatelessWidget {
                   ),
                 ),
                 const Card(
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  margin: EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 25,
+                  ),
                   color: Colors.white,
-                  child: Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.call,
-                          size: 20,
-                          color: Colors.teal,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          "+91 12345-67890",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.teal,
-                          ),
-                        ),
-                      ],
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.call,
+                      size: 20,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "+91 12345-67890",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.teal,
+                      ),
                     ),
                   ),
                 ),
                 const Card(
                   color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  child: Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.email,
-                          size: 20,
-                          color: Colors.teal,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          "sahil@gmail.com",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.teal,
-                          ),
-                        )
-                      ],
+                  margin: EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 25,
+                  ),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      size: 20,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "sahil@gmail.com",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.teal,
+                      ),
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),
