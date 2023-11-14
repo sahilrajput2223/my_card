@@ -9,7 +9,7 @@ class MyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -17,26 +17,27 @@ class MyCard extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 60,
                   backgroundColor: Colors.white,
                   backgroundImage: AssetImage('assets/images/ironcat.jpg'),
                 ),
-                Text(
+                const Text(
                   'Sahil Rajput',
                   style: TextStyle(
+                    fontFamily: 'Satisfy-Regular',
                     color: Colors.white,
-                    fontSize: 30,
+                    fontSize: 40,
                     letterSpacing: 5,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
-                  'Java Developer',
-                  style: TextStyle(
+                  'Java Developer'.toUpperCase(),
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20,
-                    letterSpacing: 2,
+                    letterSpacing: 1,
                   ),
                 ),
               ],
