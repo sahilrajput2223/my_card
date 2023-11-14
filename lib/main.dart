@@ -11,7 +11,7 @@ class MyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.teal.shade300,
         body: SafeArea(
           child: Center(
             child: Column(
@@ -41,6 +41,56 @@ class MyCard extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                Container(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  padding: const EdgeInsets.all(10),
+                  color: Colors.white,
+                  child: const Row(
+                    children: [
+                      Icon(
+                        Icons.call,
+                        size: 20,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "+91 12345-67890",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.white,
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  padding: const EdgeInsets.all(10),
+                  child: const Row(
+                    children: [
+                      Icon(
+                        Icons.email,
+                        size: 20,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "sahil@gmail.com",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal,
+                        ),
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           ),
