@@ -13,78 +13,76 @@ class MyCard extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal.shade300,
         body: SafeArea(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const CircleAvatar(
-                  radius: 60,
-                  backgroundColor: Colors.white,
-                  backgroundImage: AssetImage('assets/images/ironcat.jpg'),
-                ),
-                const Text(
-                  'Sahil Rajput',
-                  style: TextStyle(
-                    fontFamily: 'Satisfy-Regular',
-                    color: Colors.white,
-                    fontSize: 40,
-                    letterSpacing: 5,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  'Java Developer'.toUpperCase(),
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const Card(
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 25,
-                  ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const CircleAvatar(
+                radius: 60,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('assets/images/ironcat.jpg'),
+              ),
+              const Text(
+                'Sahil Rajput',
+                style: TextStyle(
+                  fontFamily: 'Satisfy-Regular',
                   color: Colors.white,
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.call,
-                      size: 20,
+                  fontSize: 40,
+                  letterSpacing: 5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'Java Developer'.toUpperCase(),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.call,
+                    size: 20,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "+91 12345-67890",
+                    style: TextStyle(
+                      fontSize: 20,
                       color: Colors.teal,
                     ),
-                    title: Text(
-                      "+91 12345-67890",
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.teal,
-                      ),
-                    ),
                   ),
                 ),
-                const Card(
-                  color: Colors.white,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 25,
+              ),
+              const Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 20,
+                    color: Colors.teal,
                   ),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.email,
-                      size: 20,
+                  title: Text(
+                    "sahil@gmail.com",
+                    style: TextStyle(
+                      fontSize: 20,
                       color: Colors.teal,
                     ),
-                    title: Text(
-                      "sahil@gmail.com",
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.teal,
-                      ),
-                    ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
